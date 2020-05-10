@@ -2,7 +2,10 @@ import React from 'react';
 
 import './App.css';
 import PropTypes from 'prop-types';
-
+import Increament from './Increment';
+import ContextExample from './ContextExample'
+import RefExample from './RefExample'
+import RenderPropsExample from './RenderPropsExample'
 
 function List(props) {
  const { items } = props;
@@ -12,9 +15,16 @@ function List(props) {
  }
  
  return (
-    <ul className="list-items">
-        {items.map(item => <li key={item} className="item">{item}</li>)}
-    </ul>
+   //  <ul className="list-items">
+   //      {items.map(item => <li key={item} className="item">{item}</li>)}
+
+   //      <Increament/>
+   //      <ContextExample/>
+   //      <RefExample/>
+        
+   //  </ul>
+   <RenderPropsExample />
+    
     );
 }
  
@@ -22,7 +32,7 @@ function List(props) {
     items: PropTypes.array,
  };
  List.defaultProps = {
-    items: [],
+    items: [1,2,3],
  };
  export default List;
    
