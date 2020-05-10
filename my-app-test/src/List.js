@@ -3,9 +3,10 @@ import React from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
 import Increament from './Increment';
-import ContextExample from './ContextExample'
-import RefExample from './RefExample'
-import RenderPropsExample from './RenderPropsExample'
+import ContextExample from './ContextExample';
+import RefExample from './RefExample';
+import RenderPropsExample from './RenderPropsExample';
+
 
 function List(props) {
  const { items } = props;
@@ -15,15 +16,18 @@ function List(props) {
  }
  
  return (
-   //  <ul className="list-items">
-   //      {items.map(item => <li key={item} className="item">{item}</li>)}
+    <div> 
+     <ul className="list-items">
+         {items.map(item => <li key={item} className="item">{item}</li>)}
 
-   //      <Increament/>
-   //      <ContextExample/>
-   //      <RefExample/>
+       <Increament/>
+        <ContextExample/>
+        <RefExample/>
         
-   //  </ul>
+     </ul>
    <RenderPropsExample />
+  
+   </div>
     
     );
 }
