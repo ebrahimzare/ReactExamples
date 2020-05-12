@@ -4,10 +4,12 @@ import './index.css';
 import List from './List';
 
 import * as serviceWorker from './serviceWorker';
+import EmployeeForm from './EmployeeForm';
 
 ReactDOM.render(
   <React.StrictMode>
-    <List />
+    {/* <List /> */}
+    <EmployeeForm/>
   </React.StrictMode>,
   document.getElementById('root')
 );

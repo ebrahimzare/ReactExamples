@@ -7,7 +7,8 @@ import Employees from './Employees'
 
 ReactDOM.render(
   <Router>
-    <Employees />
+    {/* <Employees /> */}
+    <EmployeeForm />
   </Router>,
   document.getElementById('root'),
 );
